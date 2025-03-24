@@ -43,7 +43,7 @@ def run_all():
             passed, output = fn()
         except Exception as e:
             passed, output = False, f"Unhandled Exception: {e}"
-        status = "✅ Passed" if passed else "❌ Failed"
+        status = "Passed" if passed else "Failed"
         print(f"{name}: {status} | Output: {output}")
 
 if __name__ == "__main__":
